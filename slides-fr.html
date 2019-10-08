@@ -258,11 +258,11 @@
         #HTML : LE NIVEAU DU CONTENU
 
         Les balises viennent normalement en paire : il y a une balise d'ouverture et une balise de fermeture. Ces balises entourent le contenu. Si vous regardez bien, la balise de fermeture prend une barre oblique vers l'avant (/), mais pas la balise d'ouverture.
-        ```xml
+        ```html
         <balise> balise d'ouverture --- balise de fermeture </balise>
         ```
         Les balises HTML décrivent le contenu qui se trouve à l'intérieur afin que le navigateur puisse le comprendre.
-        ```xml
+        ```html
         <h1>Cette balise décrit un en-tête.</h1>
         <p>Cette balise décrit un paragraphe.</p>
         ```
@@ -274,7 +274,7 @@
 
         Les balises peuvent être *imbriquées*, c'est-à-dire mises dans d'autres balises, comme ceci :
 
-        ```
+        ```html
         <baliseexterne>contenu externe <baliseinterne>contenu interne</baliseinterne>contenu externe</baliseexterne>
         ```
 
@@ -282,7 +282,7 @@
 
         L'élément interne, qui se trouve dans un autre élément (l'élément externe), est l'enfant de l'élément externe.
 
-        ```
+        ```html
         <parent>
           <enfant></enfant>
         </parent>
@@ -318,7 +318,7 @@
 
       À l'intérieur du dossier de fichiers d'apprentissage que vous avez téléchargé aujourd'hui, ouvrez le dossier **project** l'éditeur de texte pour modifier votre projet.
 
-      ```html
+      ```xml
       codemobile-html-css
         |-- framework // Ce dossier contient les fichiers des diapositives. Ne modifiez pas les fichiers qui s'y trouvent!
         |-- project // Ce dossier contient les fichiers des exercices de l'atelier (images et fichiers CSS et HTML).
@@ -378,7 +378,7 @@
 
         Les balises ci-dessous doivent se trouver dans **tous** les documents HTML.
 
-        ```
+        ```html
         <!DOCTYPE html>
         <html lang="fr">
           <head>
@@ -479,7 +479,7 @@
         * Ils suivent la syntaxe `attribut="valeur"` (remarquez bien les guillemets).
         * Il y a beaucoup d'attributs différents pour chaque élément HTML.
 
-        ```
+        ```html
         <balise attribut="valeur">contenu</balise>
         ```
       </script>
@@ -493,12 +493,12 @@
 
         L'attribut `lang` sert à indiquer la langue de la page.
 
-        ```
+        ```html
         <html lang="fr">
         ```
 
         L'attribut `charset` indique le codage de caractères de la page.
-        ```
+        ```html
         <meta charset="UTF-8">
         ```
       </script>
@@ -515,7 +515,7 @@
 
         Qu'ils comportent une ou plusieurs phrases, les **paragraphes** ont besoin d'une paire de balises `<p></p>`.
 
-        ```xml
+        ```html
         <p>Ceci est un paragraphe.</p>
 
         <p>Ceci est un long paragraphe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero dolor expedita quasi reiciendis minus unde sapiente id eveniet saepe officia quibusdam aspernatur, sint voluptate ipsam ex magni. Aliquam, ex!</p>
@@ -529,7 +529,7 @@
       ##Modifiez le texte d'un paragraphe sur votre site.
 
       * Nous modifierons le contenu de notre code HTML.
-      * Le contenu est le texte entre la balise d'ouverture ```<p>``` et la balise de fermeture ```</p>```.
+      * Le contenu est le texte entre la balise d'ouverture `<p>` et la balise de fermeture `</p>`.
 
     </script>
     </section>
@@ -578,14 +578,14 @@
 
         Les images utilisent une balise autofermante ainsi qu'un *attribut* `src` pour indiquer au navigateur l'emplacement du fichier d'image.
 
-        ```
+        ```html
         <img src="chemin/vers/image/nom-du-fichier"/>
 
         ```
 
         L'attribut `alt` est aussi ajouté aux images pour offrir du *texte alternatif* qui servira à décrire l'image aux personnes ayant une déficience visuelle qui utilisent un lecteur d'écran pour consulter le site.
 
-        ```
+        ```html
         <img src="http://placekitten.com/200/300" alt="Un chaton!"/>
 
         ```
@@ -618,7 +618,7 @@
 
         Comme les images ne sont pas dans le même dossier que **index.html**, utilisez un chemin *relatif* pour lier les fichiers d'image.
 
-        ```
+        ```html
         <img src="images/fichier-image.jpg"/>
         ```
         L'exemple ci-dessous dirige le navigateur vers un dossier nommé **images**, puis au nom du fichier *avec l'extension du fichier*.
@@ -640,12 +640,12 @@
 
         Utilisez la balise d'ancrage, `<a>`, pour créer un lien. La balise a aussi besoin d'un attribut `href` qui fournit des informations sur l'emplacement de la ressource.
 
-        ```xml
+        ```html
         <a href="http://canadalearningcode.ca">Canada en programmation</a>
         ```
 
         Voici la syntaxe pour créer un lien vers une adresse courriel :
-        ```xml
+        ```html
         <a href="mailto:allo@moncourriel.com">allo@moncourriel.com</a>
         ```
       </script>
@@ -657,8 +657,8 @@
         <ul>
             <li>Notre site Web est un peu vide!</li>
             <li>Ajoutons-y du contenu qui nous ressemble.</li>
-            <li>Après la dernière balise ``` <img>```, ajoutez une balise ``` <h2>``` pour créer une autre section.</li>
-            <li>Ajoutez quelques paragraphes ```(<p>) ``` pour parler de vos passe-temps, comme les livres, les films, le sport, les jeux vidéo ou les animaux!</li>
+            <li>Après la dernière balise `<img>`, ajoutez une balise `<h2>` pour créer une autre section.</li>
+            <li>Ajoutez quelques paragraphes `(<p>)` pour parler de vos passe-temps, comme les livres, les films, le sport, les jeux vidéo ou les animaux!</li>
         </ul>
 
       </script>
@@ -773,7 +773,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         #Essayons ces règles!
-        ```
+        ```css
         sélecteur {
           propriété: valeur;
         }
@@ -784,7 +784,7 @@
 
         **Valeurs** : détermine l'attribut de cette propriété, comme rouge (« red ») ou la largeur.
 
-        ```
+        ```css
         p {
           color: red;
         }
@@ -823,7 +823,9 @@
 
         Nous pouvons définir la couleur de l'arrière-plan avec la propriété CSS <strong>background-color</strong>.
 
-        ```background-color: red;```
+        ```css
+        background-color: red;
+        ```
 
         Sélectionnez l'élément « body » et changez sa couleur!
 
@@ -837,7 +839,9 @@
 
         Nous pouvons changer la couleur du texte avec la propriété <strong>color</strong>.
 
-        ```color:blue;```
+        ```css
+        color:blue;
+        ```
 
         Sélectionnez l'élément « body » et changez sa couleur!
 
@@ -853,7 +857,9 @@
           <li>Il est important de sélectionner une police « prête pour le Web ».</li>
           <li>Vous pouvez définir la police de votre texte avec la propriété font-family.</li>
 
-        ```font-family: Impact, Charcoal, sans-serif;```
+        ```css
+        font-family: Impact, Charcoal, sans-serif;
+        ```
 
       </script>
     </section>
@@ -865,7 +871,7 @@
 
         Les polices dites « prêtes pour le Web » sont installées par défaut. Toutefois, comme les systèmes d'exploitation n'ont pas les mêmes polices installées par défaut, utilisez une pile de polices (« font stack ») pour avoir des options de rechange.
 
-        ```
+        ```css
         font-family: Helvetica, Arial, sans-serif;
         ```
 
@@ -888,7 +894,9 @@
 
         Nous pouvons changer la taille du texte avec la propriété <strong>font-size</strong> en définissant la taille en pixels.
 
-        ```font-size: 64px;```
+        ```css
+        font-size: 64px;
+        ```
 
         Essayez de grossir le `h1` sur votre site!
 
@@ -903,7 +911,9 @@
 
         Pour changer la taille de nos images, nous modifions la propriété <strong>width</strong> (« largeur ») en définissant un pourcentage.
 
-        ```width: 50%;```
+        ```css
+        width: 50%;
+        ```
 
         Essayez de rendre les éléments `img` de votre site plus petits avec un pourcentage.
 
@@ -939,7 +949,7 @@
         #Autres propriétés CSS intéressantes
         ##Consultez le site [CSS.cool](offline-docs/css-reference.htm) pour découvrir différentes propriétés ou essayez celles-ci :
 
-        ```
+        ```css
         color: #999999;
         font-size: 18px;
         font-family: ‘Comic Sans MS’;

@@ -256,11 +256,11 @@
         #HTML: THE CONTENT LAYER
 
         Tags usually come in pairs — an opening tag and a closing tag — to wrap the content. Note the closing tag has a forward slash (/).
-        ```xml
+        ```html
         <tag> opening tag --- closing tag </tag>
         ```
         HTML tags describe the content inside of them to the web browser.
-        ```xml
+        ```html
         <h1>This tag describes a heading</h1>
         <p>This tag is for paragraphs.</p>
         ```
@@ -272,7 +272,7 @@
 
         Tags can be *nested* within other tags like this:
 
-        ```
+        ```html
         <outertag>outer content <innertag>inner content</innertag> outer content</outertag>
         ```
 
@@ -280,7 +280,7 @@
 
         The inner element is the child of the outer element.
 
-        ```
+        ```html
         <parent>
           <child></child>
         </parent>
@@ -304,14 +304,14 @@
         * Allows for collaboration on a project!
         * Highlights mistakes which helps make the coding experience easier.
         * Go to https://glitch.com/
-        
+
         ![Glitch](framework/img/workshop/glitch.png)
-        
+
         * Choose new project and 'hello-webpage'
-        
+
         ![new-project](framework/img/workshop/new-project.png)
 
-        
+
 
       </script>
     </section>
@@ -323,7 +323,7 @@
 
         The tags below should be included in ** *all* ** HTML documents. Luckily Glitch gives us all of these already!!
 
-        ```
+        ```html
         <!DOCTYPE html>
         <html lang="en">
           <head>
@@ -414,7 +414,7 @@
         * Follow the syntax `attribute="value"` (note the quotes)
         * There are many different attributes for each HTML element
 
-        ```
+        ```html
         <tag attribute="value">content</tag>
         ```
       </script>
@@ -428,12 +428,12 @@
 
         The `lang` attribute is used to classify the language.
 
-        ```
+        ```html
         <html lang="en">
         ```
 
         The `charset` attribute sets the character encoding.
-        ```
+        ```html
         <meta charset="UTF-8">
         ```
       </script>
@@ -450,7 +450,7 @@
 
         **Paragraphs**: whether it&#39;s one sentence or more, each paragraph needs its own pair of `<p></p>` tags.
 
-        ```xml
+        ```html
         <p>This is a paragraph.</p>
 
         <p>This is a longer paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero dolor expedita quasi reiciendis minus unde sapiente id eveniet saepe officia quibusdam aspernatur, sint voluptate ipsam ex magni. Aliquam, ex!</p>
@@ -464,7 +464,7 @@
       ##Edit the paragraph text on your site.
 
       * We’re going to edit the content of our HTML code.
-      * The content is the words between the opening ```<p>```and closing ```</p>```tags.
+      * The content is the words between the opening `<p>` and closing `</p>` tags.
 
     </script>
     </section>
@@ -513,14 +513,14 @@
 
         Images use a self-closing tag. It also requires a `src` *attribute* to tell the browser the location of the image file.
 
-        ```
+        ```html
         <img src="path/to/image/file-name"/>
 
         ```
 
         `alt` is another attribute that is added to images to provide *alternative text* to visually impaired web visitors using screen readers.
 
-        ```
+        ```html
         <img src="http://placekitten.com/200/300" alt="kitten!"/>
 
         ```
@@ -550,18 +550,18 @@
         #Using Images in Glitch
 
         In Glitch we store our pictures in the assets folder.
-        
+
         ![Assetfolder](framework/img/workshop/assetfolder.png)
 
         We need to add an asset in order to use it in our website and for that we need to upload our folder.
-        
+
         ![Upload](framework/img/workshop/upload-asset.png)
-        
+
         By clicking on the image you can easily 'copy' the link that you can then paste into your code!
-        
+
         ![Upload](framework/img/workshop/imagecopy.png)
         ![Upload](framework/img/workshop/pastehere.png)
-      
+
 
       </script>
     </section>
@@ -581,12 +581,12 @@
 
         Use the anchor tag, `<a>` to create the link. It also needs an `href` attribute to provide information for the location of the resource.
 
-        ```xml
+        ```html
         <a href="http://canadalearningcode.ca">Canada Learning Code</a>
         ```
 
         Here's the syntax for an email link.
-        ```xml
+        ```html
         <a href="mailto:hello@myemail.com">hello@myemail.com</a>
         ```
       </script>
@@ -598,8 +598,8 @@
         <ul>
             <li>Our webpage is looking a little bare!</li>
             <li>Let’s add some new content about you</li>
-            <li>After the last ``` <img>``` tag , add a new ``` <h2>``` tag to make a new section</li>
-            <li>Add some paragraphs ```(<p>) ``` to talk about some of your favourite things for example: Movies, Books, Sports, Video Games, or pets!</li>
+            <li>After the last `<img>` tag , add a new `<h2>` tag to make a new section</li>
+            <li>Add some paragraphs `(<p>)` to talk about some of your favourite things for example: Movies, Books, Sports, Video Games, or pets!</li>
         </ul>
 
       </script>
@@ -681,7 +681,7 @@
         #Where do we put CSS?
 
         Open up the  ```style.css``` file in the same folder as your ``index.html`` file. Glitch already connects these two files together for us!
-        
+
         ![Upload](framework/img/workshop/stylelink.png)
 
       </script>
@@ -714,7 +714,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         #Let's Try Rules Out!
-        ```
+        ```css
         selector {
           property: value;
         }
@@ -725,7 +725,7 @@
 
         **Values** determine what that property will be set to: like red, or big
 
-        ```
+        ```css
         p {
           color: red;
         }
@@ -764,7 +764,9 @@
 
         We can set background colours with the CSS property <strong>background-color</strong>
 
-        ```background-color: red;```
+        ```css
+        background-color: red;
+        ```
 
         Select the body element, and change its colour!
 
@@ -778,7 +780,9 @@
 
         We can change text colour with the <strong>color</strong> property
 
-        ```color:blue;```
+        ```css
+        color:blue;
+        ```
 
         Select the body element, and change its colour!
 
@@ -794,7 +798,9 @@
           <li>We need to pick from web-safe fonts</li>
           <li>Set the font for your text using the font-family property</li>
 
-        ```font-family: Impact, Charcoal, sans-serif;```
+        ```css
+        font-family: Impact, Charcoal, sans-serif;
+        ```
 
       </script>
     </section>
@@ -806,7 +812,7 @@
 
         Web safe refers to pre-installed fonts.  Operating systems do not have the same defaults, so use a font *stack* to provide fallback options.
 
-        ```
+        ```css
         font-family: Helvetica, Arial, sans-serif;
         ```
 
@@ -829,7 +835,9 @@
 
         We can change the size of our text with the <strong>font-size</strong> property using pixels.
 
-        ```font-size: 64px;```
+        ```css
+        font-size: 64px;
+        ```
 
         Try making the `h1` on your site really big!
 
@@ -844,7 +852,9 @@
 
         We can change the size of our images with the <strong>width</strong> property using percentage.
 
-        ```width: 50%;```
+        ```css
+        width: 50%;
+        ```
 
         Try making the `img` elements on your site smaller.
 
@@ -880,7 +890,7 @@
         #Other Cool CSS Properties
         ##See [CSS.cool](offline-docs/css-reference.htm) or try these CSS properties!
 
-        ```
+        ```css
         color: #999999;
         font-size: 18px;
         font-family: ‘Comic Sans MS’;
