@@ -106,7 +106,7 @@
 
         <ul>
           <li class="delayed">Computers don’t understand human languages like English</li>
-          <li class="delayed">They only understand a different kind of language: computer, or “programming” languages</li>
+          <li class="delayed">They only understand a different kind of language: computer, or “programming" languages</li>
           <li class="delayed">Computer languages are written in code</li>
           <li class="delayed">There are lots of computer languages!</li>
         </ul>
@@ -305,16 +305,18 @@
         * Free easy-to-use website that lets you build websites, apps and more using code.
         * Allows for collaboration on a project!
         * Highlights mistakes which helps make the coding experience easier.
-        * Go to https://glitch.com/
 
-        ![Glitch](framework/img/workshop/glitch.png)
+        ## Getting started
 
-        * Choose new project and 'hello-webpage'
+        1. Go to [glitch.com](https://glitch.com/)
 
-        ![new-project](framework/img/workshop/new-project.png)
+          ![](framework/img/workshop/glitch.png)
 
+        2. Choose new project
 
+          ![](framework/img/workshop/new-project.png)
 
+        3. Select "hello-webpage"
       </script>
     </section>
 
@@ -371,6 +373,7 @@
         * Includes information about the page but *does not display content*
         * The `<title></title>` element is the only required element
           * Displayed in the browser tab, bookmarks and search engine results
+          * Is the first piece of content announced by screen readers
         * Page content *never* goes here
 
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -536,13 +539,10 @@
       <script type="text/template">
         #Image file types
 
-        **gif** - smaller file size when used for line art, charts, and images with minimal colour variation. <span class="note">(That's why animated gifs tend to look grainy but oh so fun!)</span>
-
-        **jpg** - smaller file size when used for photographs with lots of rich colours or gradients
-
-        **png** - larger file size but has the best quality and is great for images with transparent backgrounds
-
-        **svg** - XML-based vector image format for 2D graphics with support for interactivity and animation
+        - `gif` - smaller file size when used for line art, charts, and images with minimal colour variation. <span class="note">(That's why animated gifs tend to look grainy but oh so fun!)</span>
+        - `jpg` - smaller file size when used for photographs with lots of rich colours or gradients
+        - `png` - larger file size but has the best quality and is great for images with transparent backgrounds
+        - `svg` - XML-based vector image format for 2D graphics with support for interactivity and animation
 
       </script>
     </section>
@@ -553,16 +553,16 @@
 
         In Glitch we store our pictures in the assets folder.
 
-        ![Assetfolder](framework/img/workshop/assetfolder.png)
+        ![Glitch user interface with assets folder highlighted.](framework/img/workshop/assetfolder.png)
 
         We need to add an asset in order to use it in our website and for that we need to upload our folder.
 
-        ![Upload](framework/img/workshop/upload-asset.png)
+        ![Select 'add asset', select 'upload'.](framework/img/workshop/upload-asset.png)
 
         By clicking on the image you can easily 'copy' the link that you can then paste into your code!
 
-        ![Upload](framework/img/workshop/imagecopy.png)
-        ![Upload](framework/img/workshop/pastehere.png)
+        ![Image inspector in Glitch user interface. Copy button is highlighted to copy image path.](framework/img/workshop/imagecopy.png)
+        ![Paste image path in 'src' attribute of your image.](framework/img/workshop/pastehere.png)
 
 
       </script>
@@ -584,7 +584,7 @@
         Use the anchor tag, `<a>` to create the link. It also needs an `href` attribute to provide information for the location of the resource.
 
         ```xml
-        <a href="http://canadalearningcode.ca">Canada Learning Code</a>
+        <a href="https://canadalearningcode.ca">Canada Learning Code</a>
         ```
 
         Here's the syntax for an email link.
@@ -610,7 +610,7 @@
     <section class="slide title" data-markdown>
       <script type="text/template">
       #CSS Time
-      ##Let's make everything <strike>beautiful</strike> look cool!
+      ##Let's make everything <s>beautiful</s> look cool!
     </script>
     </section>
 
@@ -636,7 +636,7 @@
 
         CSS requires these symbols: curly brackets `{ }`, colon `:`, semi-colon `;`
 
-        ![keyboard](framework/img/workshop/keyboard-css.png)
+        ![Keyboard with left and right curly brace and semi colon keys highlighted](framework/img/workshop/keyboard-css.png)
 
       </script>
     </section>
@@ -664,7 +664,7 @@
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
         #A WEBPAGE WITHOUT CSS
-        <img src= "framework/img/nocss.jpg" alt="Website without CSS">
+        <img src= "framework/img/nocss.jpg" alt="Website without CSS featuring plain text, linear layout, blue links, serif fonts.">
 
       </script>
     </section>
@@ -673,7 +673,7 @@
       <script type="text/template">
         #A WEBPAGE WITH CSS
 
-        <img src= "framework/img/css.jpg" alt="Website with CSS">
+        <img src= "framework/img/css.jpg" alt="Website with CSS featuring styled text, multi-column layout, brand green links, sans-serif fonts.">
 
       </script>
     </section>
@@ -684,8 +684,9 @@
 
         Open up the  ```style.css``` file in the same folder as your ``index.html`` file. Glitch already connects these two files together for us!
 
-        ![Upload](framework/img/workshop/stylelink.png)
-
+        ```html
+        <link rel="stylesheet" href="style.css">
+        ```
       </script>
     </section>
 
@@ -703,9 +704,8 @@
         **Offline resource: [CSS.cool](offline-docs/css-reference.htm)**
 
         ---
-        ###Resources
+        ## Resources
 
-        *   [CSS Reference on w3schools.com](https://www.w3schools.com/cssref)
         *   [MDN CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
         *   [Search for FAQ on StackOverflow](https://stackoverflow.com/)
 
@@ -721,11 +721,10 @@
           property: value;
         }
         ```
-        **Selectors:** determine which HTML element or elements the rules apply to
 
-        **Properties** determine what property we want to make a rule about, like colour, or size.
-
-        **Values** determine what that property will be set to: like red, or big
+        - **Selectors** determine which HTML element or elements the rules apply to.
+        - **Properties** determine what property we want to make a rule about, like colour, or size.
+        - **Values** determine what that property will be set to: like red, or big.
 
         ```
         p {
@@ -740,7 +739,7 @@
       <script type="text/template">
         #What do these do?
 
-        ##Open the **style.css** file and test out the following:
+        Open the `style.css` file and test out the following:
 
         ```css
           h1 {
@@ -764,11 +763,11 @@
       <script type="text/template">
         #Color
 
-        We can set background colours with the CSS property <strong>background-color</strong>
+        We can set background colours with the CSS property `background-color`:
 
         ```background-color: red;```
 
-        Select the body element, and change its colour!
+        Select the `body` element, and change its colour!
 
       </script>
     </section>
@@ -778,11 +777,11 @@
       <script type="text/template">
         #Text and Colors
 
-        We can change text colour with the <strong>color</strong> property
+        We can change text colour with the `color` property:
 
         ```color:blue;```
 
-        Select the body element, and change its colour!
+        Select the `body` element, and change its colour!
 
       </script>
     </section>
@@ -794,7 +793,7 @@
         <ul>
           <li>We can’t use just any font in your website</li>
           <li>We need to pick from web-safe fonts</li>
-          <li>Set the font for your text using the font-family property</li>
+          <li>Set the font for your text using the `font-family` property</li>
 
         ```font-family: Impact, Charcoal, sans-serif;```
 
@@ -819,7 +818,7 @@
           * <span style="font-family:Georgia;">Georgia</span>
           * <span style="font-family:Courier;">Courier</span>
 
-        Check out <http://www.cssfontstack.com> for a complete list.
+        Check out [cssfontstack.com](https://www.cssfontstack.com) for a complete list.
       </script>
     </section>
 
@@ -829,7 +828,7 @@
 
         Pixels are tiny units that make up our screen.
 
-        We can change the size of our text with the <strong>font-size</strong> property using pixels.
+        We can change the size of our text with the `font-size` property using pixels:
 
         ```font-size: 64px;```
 
@@ -844,7 +843,7 @@
 
         We can also change the size of elements using percentages. This helps ensure that elements are sized *in comparison to* the size of our window. We should use % when designing for multiple screen sizes (like mobile).
 
-        We can change the size of our images with the <strong>width</strong> property using percentage.
+        We can change the size of our images with the `width` property using percentage:
 
         ```width: 50%;```
 
@@ -859,13 +858,13 @@
 
         We can use the `class` attribute to style specific elements on our website.
 
-        ##In index.html
+        ##In `index.html`
         Give the element a name `class="small"`
         ```html
-        <img class=”small” src=”image.jpeg”/>
+        <img class="small" src="image.jpeg" alt="Image description">
         ```
 
-        ##In style.css
+        ##In `style.css`
         Add that name to a new css rule `img.small`
         ```css
         img.small {
@@ -880,7 +879,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         #Other Cool CSS Properties
-        ##See [CSS.cool](offline-docs/css-reference.htm) or try these CSS properties!
+        Check out [CSS.cool](offline-docs/css-reference.htm) or try these CSS properties!
 
         ```
         color: #999999;
