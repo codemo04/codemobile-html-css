@@ -28,21 +28,23 @@
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
         <h2>Get <br>Connected</h2>
-        <p><strong>Wifi:</strong> wifi network</p>
-        <p><strong>Password:</strong> wifi password</p>
+        <ul>
+          <li><strong>Wifi:</strong> wifi network</li>
+          <li><strong>Password:</strong> wifi password</li>
+        </ul>
         <hr>
 
         <h2>Download<br> & Install</h2>
         <ol class="downloads">
-          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/codemobile-html-css/archive/master.zip">http://bit.ly/codemobile-html-css</a>
+          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/codemobile-html-css/archive/master.zip">bit.ly/codemobile-html-css</a>
             <ul>
               <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
-              <li>open <em>slides.html</em> in the browser to view the slides</li>
+              <li>open <code>slides.html</code> in the browser to view the slides</li>
             </ul>
           </li>
-          <li>Atom Editor: <a href="http://atom.io">http://atom.io</a></li>
+          <li>Atom Editor: <a href="http://atom.io">atom.io</a></li>
             <ul><li>Chromebook users can use <a href="https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=en">Caret</a></li></ul>
-          <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">google.ca/chrome</a></li>
           </li>
         </ol>
       </div>
@@ -106,8 +108,8 @@
         **...a set of instructions that tell a computer what to do**.
 
         <ul>
-          <li class="delayed">Computers don’t understand human languages like english</li>
-          <li class="delayed">They only understand a different kind of language: computer, or “programming” languages</li>
+          <li class="delayed">Computers don’t understand human languages like English</li>
+          <li class="delayed">They only understand a different kind of language: computer, or “programming" languages</li>
           <li class="delayed">Computer languages are written in code</li>
           <li class="delayed">There are lots of computer languages!</li>
         </ul>
@@ -145,10 +147,10 @@
           <li class="delayed">Write code</li>
         </ol>
 
-        ![https://www.flickr.com/photos/baldiri/5734993652](framework/img/workshop/wireframe.jpg)
-        ![https://www.flickr.com/photos/ivanwalsh/4457223020](framework/img/workshop/worddoc.jpg)
-        ![https://pixabay.com/en/social-social-networks-1206614/](framework/img/workshop/angry.jpg)
-        ![https://pixabay.com/en/code-programming-hacking-html-web-820275/](framework/img/workshop/code.jpg)
+        ![Wireframe doument on iPad.](framework/img/workshop/wireframe.jpg)
+        ![Word processor desktop application window.](framework/img/workshop/worddoc.jpg)
+        ![Person frustrated with computer.](framework/img/workshop/angry.jpg)
+        ![Code on a computer screen.](framework/img/workshop/code.jpg)
 
                 <div class="dropdown">
                           <button class="dropbtn">Attributions</button>
@@ -171,25 +173,25 @@
     <section class="slide centered" data-markdown data-toc>
       <script type="text/template">
         #What does code look like?
-        <img src= "framework/img/code.JPG" alt="Code">
+        <img src= "framework/img/code.JPG" alt="Matrix style green code falling down a computer screen.">
       </script>
     </section>
 
     <section class="slide centered" data-markdown data-toc>
       <script type="text/template">
         #What does code look like?
-        <img src= "framework/img/code1.JPG" alt="Code">
+        <img src= "framework/img/code1.JPG" alt="HTML code in a code editor on a computer screen.">
       </script>
     </section>
 
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
-        #How do we see websites?
+        #How do we read websites?
 
-        * We use a browser to see websites on the internet
-        * Browsers read the code we write and turn it into the websites we see
+        * We use a browser to read and interact with websites on the internet
+        * Browsers read the code we write and turn it into the websites we consume
 
-        <img src= "framework/img/browsers.jpg" alt="Browsers">
+        <img src= "framework/img/browsers.jpg" alt="">
       </script>
     </section>
 
@@ -197,14 +199,14 @@
       <script type="text/template">
         #Let's take a look!
 
-        We can use **Chrome Developer tools** to see the code that makes up a website, and change how it looks on our screen.
+        We can use **Chrome Developer tools** to review the code that makes up a website, and change how it looks on our screen.
 
         1. Open [this website](offline-docs/superhero-profile/black-panther.html)
         1. Right-click / two-finger tap on the page and select **Inspect Element**
 
         Try changing the heading!
 
-        ![Inspect the H1 element and change the text between the H1 tags](framework/img/workshop/inspect-element.png)
+        ![Chrome developer tools inspecting the 'Hello World' h1 heading.](framework/img/workshop/inspect-element.png)
 
       </script>
     </section>
@@ -240,7 +242,7 @@
       <script type="text/template">
         #HTML is made up of Elements
 
-        <img src= "framework/img/elements.jpg" alt="HTML elements ">
+        <img src= "framework/img/elements.jpg" alt="Screenshot of webpage without styling. Arrows point out content sections; title, headline, paragraph, list.">
       </script>
     </section>
 
@@ -250,7 +252,7 @@
 
         Tags are written with angled brackets `< >` and a forward slash `/` for the closing tag. Get to know these keys!
 
-        ![keyboard keys](framework/img/workshop/keyboard-html.png)<!-- .element: width="70%" -->
+        ![Keyboard with left arrow, right arrow, and forward slash keys highlighted.](framework/img/workshop/keyboard-html.png)<!-- .element: width="70%" -->
       </script>
     </section>
 
@@ -295,7 +297,7 @@
       <script type="text/template">
         #Ready to start coding?
 
-        <img src= "framework/img/cat.gif" alt="Cat Typing Gif">
+        <img src= "framework/img/cat.gif" alt="Cat furiously typing on a laptop.">
       </script>
     </section>
 
@@ -328,7 +330,7 @@
 
       Go to **File** > ** Add Project Folder**. A popup will appear.
 
-      ![](framework/img/workshop/editor-add-project-1.jpg)
+      ![Atom editor with File menu open. Add Project Folder option is highlighted.](framework/img/workshop/editor-add-project-1.jpg)
 
       Then:
 
@@ -350,18 +352,18 @@
         Go to **Preferences** to open the customization options.<br />
         For Windows Users, go to the **File** menu and choose Settings.
 
-        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
+        ![Atom editor with Atom menu open. Preferences item is highlighted.](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
 
         Select the **Editor** tab in the left menu
 
-        ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+        ![Atom Editor settings screen.](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
 
         Make sure the **Soft Wrap** and **Show Indent Guide** options are checked.
 
-        ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
+        ![Atom Editor settings screen, Soft Wrap checkbox is checked.](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
 
         ---
-        ###Resources
+        ## Resources
 
         *   [Atom documentation](https://atom.io/docs)
         *   [Atom Shortcuts cheat sheet](https://bugsnag.com/blog/atom-editor-cheat-sheet)
@@ -375,7 +377,7 @@
       <script type="text/template">
         #Base HTML Tags
 
-        Open the **index.html** in Atom.
+        Open the `index.html` in Atom.
 
         The tags below should be included in ** *all* ** HTML documents.
 
@@ -399,7 +401,6 @@
         ---
         ###Resources
 
-        *   [HTML Reference on w3schools.com](https://www.w3schools.com/tags)
         *   [MDN HTML documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
         *   [Search for FAQ on StackOverflow](https://stackoverflow.com/)
 
@@ -435,6 +436,7 @@
         * Includes information about the page but *does not display content*
         * The `<title></title>` element is the only required element
           * Displayed in the browser tab, bookmarks and search engine results
+          * Is the first piece of content announced by screen readers
         * Page content *never* goes here
 
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -600,13 +602,10 @@
       <script type="text/template">
         #Image file types
 
-        **gif** - smaller file size when used for line art, charts, and images with minimal colour variation. <span class="note">(That's why animated gifs tend to look grainy but oh so fun!)</span>
-
-        **jpg** - smaller file size when used for photographs with lots of rich colours or gradients
-
-        **png** - larger file size but has the best quality and is great for images with transparent backgrounds
-
-        **svg** - XML-based vector image format for 2D graphics with support for interactivity and animation
+        - `gif` - smaller file size when used for line art, charts, and images with minimal colour variation. <span class="note">(That's why animated gifs tend to look grainy but oh so fun!)</span>
+        - `jpg` - smaller file size when used for photographs with lots of rich colours or gradients
+        - `png` - larger file size but has the best quality and is great for images with transparent backgrounds
+        - `svg` - XML-based vector image format for 2D graphics with support for interactivity and animation
 
       </script>
     </section>
@@ -617,12 +616,12 @@
 
         It's best practice (but not required) to put image files into their own folder to keep the project files organized. We have some images already saved in the `images` folder for you to use.
 
-        Since the images are not in the same folder as **index.html**, use a *relative* path to link to the file.
-
-        ```html
-        <img src="images/image-file.jpg"/>
+        Since the images are not in the same folder as `index.html`, use a *relative* path to link to the file.
+        
         ```
-        The above example directs the browser to a folder named **images**, then the filename, *including the file extension*.
+        <img src="images/image-file.jpg" alt="image description"/>
+        ```
+        The above example directs the browser to a folder named `images`, then the filename, *including the file extension*.
       </script>
     </section>
 
@@ -641,8 +640,8 @@
 
         Use the anchor tag, `<a>` to create the link. It also needs an `href` attribute to provide information for the location of the resource.
 
-        ```html
-        <a href="http://canadalearningcode.ca">Canada Learning Code</a>
+        ```xml
+        <a href="https://canadalearningcode.ca">Canada Learning Code</a>
         ```
 
         Here's the syntax for an email link.
@@ -668,7 +667,7 @@
     <section class="slide title" data-markdown>
       <script type="text/template">
       #CSS Time
-      ##Let's make everything <strike>beautiful</strike> look cool!
+      ##Let's make everything <s>beautiful</s> look cool!
     </script>
     </section>
 
@@ -694,7 +693,7 @@
 
         CSS requires these symbols: curly brackets `{ }`, colon `:`, semi-colon `;`
 
-        ![keyboard](framework/img/workshop/keyboard-css.png)
+        ![Keyboard with left and right curly brace and semi colon keys highlighted](framework/img/workshop/keyboard-css.png)
 
       </script>
     </section>
@@ -722,7 +721,7 @@
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
         #A WEBPAGE WITHOUT CSS
-        <img src= "framework/img/nocss.jpg" alt="Website without CSS">
+        <img src= "framework/img/nocss.jpg" alt="Website without CSS featuring plain text, linear layout, blue links, serif fonts.">
 
       </script>
     </section>
@@ -731,7 +730,7 @@
       <script type="text/template">
         #A WEBPAGE WITH CSS
 
-        <img src= "framework/img/css.jpg" alt="Website with CSS">
+        <img src= "framework/img/css.jpg" alt="Website with CSS featuring styled text, multi-column layout, brand green links, sans-serif fonts.">
 
       </script>
     </section>
@@ -742,7 +741,9 @@
 
         Open up the  ```style.css``` file in the same folder as your ``index.html`` file.
 
-     <link rel="stylesheet" href="style.css" type="text/css"/>
+        ```html
+        <link rel="stylesheet" href="style.css">
+        ```
 
       </script>
     </section>
@@ -761,9 +762,8 @@
         **Offline resource: [CSS.cool](offline-docs/css-reference.htm)**
 
         ---
-        ###Resources
+        ## Resources
 
-        *   [CSS Reference on w3schools.com](https://www.w3schools.com/cssref)
         *   [MDN CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
         *   [Search for FAQ on StackOverflow](https://stackoverflow.com/)
 
@@ -779,11 +779,10 @@
           property: value;
         }
         ```
-        **Selectors:** determine which HTML element or elements the rules apply to
 
-        **Properties** determine what property we want to make a rule about, like colour, or size.
-
-        **Values** determine what that property will be set to: like red, or big
+        - **Selectors** determine which HTML element or elements the rules apply to.
+        - **Properties** determine what property we want to make a rule about, like colour, or size.
+        - **Values** determine what that property will be set to: like red, or big.
 
         ```css
         p {
@@ -798,7 +797,7 @@
       <script type="text/template">
         #What do these do?
 
-        ##Open the **style.css** file and test out the following:
+        Open the `style.css` file and test out the following:
 
         ```css
           h1 {
@@ -822,13 +821,13 @@
       <script type="text/template">
         #Color
 
-        We can set background colours with the CSS property <strong>background-color</strong>
+        We can set background colours with the CSS property `background-color`:
 
         ```css
         background-color: red;
         ```
 
-        Select the body element, and change its colour!
+        Select the `body` element, and change its colour!
 
       </script>
     </section>
@@ -838,13 +837,13 @@
       <script type="text/template">
         #Text and Colors
 
-        We can change text colour with the <strong>color</strong> property
+        We can change text colour with the `color` property:
 
         ```css
         color:blue;
         ```
 
-        Select the body element, and change its colour!
+        Select the `body` element, and change its colour!
 
       </script>
     </section>
@@ -856,7 +855,7 @@
         <ul>
           <li>We can’t use just any font in your website</li>
           <li>We need to pick from web-safe fonts</li>
-          <li>Set the font for your text using the font-family property</li>
+          <li>Set the font for your text using the `font-family` property</li>
 
         ```css
         font-family: Impact, Charcoal, sans-serif;
@@ -883,7 +882,7 @@
           * <span style="font-family:Georgia;">Georgia</span>
           * <span style="font-family:Courier;">Courier</span>
 
-        To see a complete list, check out <http://www.cssfontstack.com>.
+        Check out [cssfontstack.com](https://www.cssfontstack.com) for a complete list.
       </script>
     </section>
 
@@ -893,7 +892,7 @@
 
         Pixels are tiny units that make up our screen.
 
-        We can change the size of our text with the <strong>font-size</strong> property using pixels.
+        We can change the size of our text with the `font-size` property using pixels:
 
         ```css
         font-size: 64px;
@@ -910,7 +909,7 @@
 
         We can also change the size of elements using percentages. This helps ensure that elements are sized *in comparison to* the size of our window. We should use % when designing for multiple screen sizes (like mobile).
 
-        We can change the size of our images with the <strong>width</strong> property using percentage.
+        We can change the size of our images with the `width` property using percentage:
 
         ```css
         width: 50%;
@@ -927,13 +926,13 @@
 
         We can use the `class` attribute to style specific elements on our website.
 
-        ##In index.html
+        ##In `index.html`
         Give the element a name `class="small"`
         ```html
-        <img class=”small” src=”image.jpeg”/>
+        <img class="small" src="image.jpeg" alt="Image description">
         ```
 
-        ##In style.css
+        ##In `style.css`
         Add that name to a new css rule `img.small`
         ```css
         img.small {
@@ -948,7 +947,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         #Other Cool CSS Properties
-        ##See [CSS.cool](offline-docs/css-reference.htm) or try these CSS properties!
+        Check out [CSS.cool](offline-docs/css-reference.htm) or try these CSS properties!
 
         ```css
         color: #999999;
@@ -1021,7 +1020,7 @@
         * Use your HTML knowledge in a videogame with [eraseallkittens.com](http://eraseallkittens.com)
         * Spread the love by creating a [LoveBomb](http://lovebomb.me/) for a friend
         * Check out [CodePen](https://codepen.io/projects/) for inspiration on your next project
-        * See what [Canada Learning Code](https://canadalearningcode.ca) workshops are taking place near you
+        * Review which [Canada Learning Code](https://canadalearningcode.ca) workshops are taking place near you
 
       </script>
     </section>
