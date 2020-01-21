@@ -301,75 +301,26 @@
       </script>
     </section>
 
+    <!--translate-->
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Éditeur de texte
+        #Glitch
 
-        * Nous utilisons les éditeurs de texte pour écrire et modifier du code.
-        * Les éditeurs de texte préinstallés (Bloc-notes / TextEdit) n'ont pas beaucoup de fonctions.
-        * Il y a des options payantes et gratuites qui proposent des fonctions comme le surlignage en couleur et des modules d'extension pour améliorer votre flux de travaux.
+        * Free easy-to-use website that lets you build websites, apps and more using code.
+        * Allows for collaboration on a project!
+        * Highlights mistakes which helps make the coding experience easier.
 
-        L'éditeur **[Atom](https://atom.io/)** est entièrement gratuit. Il s'agit du programme que nous utiliserons aujourd'hui.
-        <span class="note">(S'il y a un autre éditeur installé sur votre ordinateur, il convient aussi pour l'atelier. Toutefois, quelques fonctions seront différentes de celles d'Atom.)</span>
+        ## Getting started
 
-      </script>
-    </section>
+        1. Go to [glitch.com](https://glitch.com/)
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #Préparer le projet
+          ![](framework/img/workshop/glitch.png)
 
-      À l'intérieur du dossier de fichiers d'apprentissage que vous avez téléchargé aujourd'hui, ouvrez le dossier **project** l'éditeur de texte pour modifier votre projet.
+        2. Choose new project
 
-      ```xml
-      codemobile-html-css
-        |-- framework // Ce dossier contient les fichiers des diapositives. Ne modifiez pas les fichiers qui s'y trouvent!
-        |-- project // Ce dossier contient les fichiers des exercices de l'atelier (images et fichiers CSS et HTML).
-        |-- diapositives.html // Vous regardez ce fichier en ce moment!
-      ```
+          ![](framework/img/workshop/new-project.png)
 
-      Dans Atom, allez dans **File** > ** Add Project Folder**. Une fenêtre s'affichera.
-
-      ![Éditeur Atom avec menu Fichier ouvert. L'option Ajouter un dossier de projet est en surbrillance.](framework/img/workshop/editor-add-project-1.jpg)
-
-      Ensuite :
-
-      * Allez dans le dossier **codemobile-html-css**.
-      * Sélectionnez **project**.
-      * Cliquez sur **Ouvrir** ou **Open**.
-
-      Les fichiers s'afficheront dans la barre latérale.
-      </script>
-    </section>
-
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Premiers pas avec Atom
-
-        En utilisant un bon éditeur de texte et en apprenant comment tirer profit de toutes ses fonctions, vous améliorerez votre flux de travaux. Maintenant, mettez à jour l'option « text wrapping », qui enveloppe le texte pour faciliter la lecture de longs blocs de code et de texte.
-
-        Allez dans **Preferences** pour ouvrir les options de personnalisation d'Atom.<br />
-        Si vous utilisez Windows, allez dans **File** et sélectionnez **Settings**.
-
-        ![Éditeur Atom avec menu Atom ouvert. L'élément Préférences est en surbrillance.](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
-
-        Sélectionnez l'onglet **Editor** dans le menu à gauche.
-
-        ![Écran des paramètres de l'éditeur Atom.](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
-
-        Assurez-vous de bien cocher les cases des options **Soft Wrap** et **Show Indent Guide**.
-
-        ![Écran de configuration de l'Atom Editor, la case Soft Wrap est cochée.](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
-
-        ---
-        ## Ressources
-
-        *   [Documentation Atom](https://atom.io/docs)
-        *   [Liste de raccourcis Atom](https://bugsnag.com/blog/atom-editor-cheat-sheet)
-        *   [Personnaliser Atom](https://atom.io/docs/v0.61.0/customizing-atom)
-        *   [Thèmes pour Atom](https://atom.io/themes)
-        *   [Extraits de code (snippets)](https://github.com/atom/snippets) - créez vos propres raccourcis vers des extraits de code.
+        3. Select "hello-webpage"
       </script>
     </section>
 
@@ -377,9 +328,8 @@
       <script type="text/template">
         #Balises HTML de base
 
-        Ouvrez `index.html` dans Atom.
-
-        Les balises ci-dessous doivent se trouver dans **tous** les documents HTML.
+        <!--translate-->
+        The tags below should be included in ** *all* ** HTML documents. Luckily Glitch gives us all of these already!!
 
         ```html
         <!DOCTYPE html>
@@ -610,20 +560,27 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Chemins d'accès des fichiers d'image
+<!--translate-->
+  <section class="slide" data-markdown>
+    <script type="text/template">
+      #Using Images in Glitch
 
-        Il est recommandé, mais pas obligatoire, de mettre les fichiers d'image dans leur propre dossier pour bien organiser les fichiers du projet. Nous avons déjà enregistré quelques images dans le dossier `images` afin que vous puissiez les utiliser.
+      In Glitch we store our pictures in the assets folder.
 
-        Comme les images ne sont pas dans le même dossier que `index.html`, utilisez un chemin *relatif* pour lier les fichiers d'image.
+      ![Glitch user interface with assets folder highlighted.](framework/img/workshop/assetfolder.png)
 
-        ```
-        <img src="images/fichier-image.jpg" alt="description de l'image"/>
-        ```
-        L'exemple ci-dessous dirige le navigateur vers un dossier nommé `images`, puis au nom du fichier *avec l'extension du fichier*.
-      </script>
-    </section>
+      We need to add an asset in order to use it in our website and for that we need to upload our folder.
+
+      ![Select 'add asset', select 'upload'.](framework/img/workshop/upload-asset.png)
+
+      By clicking on the image you can easily 'copy' the link that you can then paste into your code!
+
+      ![Image inspector in Glitch user interface. Copy button is highlighted to copy image path.](framework/img/workshop/imagecopy.png)
+      ![Paste image path in 'src' attribute of your image.](framework/img/workshop/pastehere.png)
+
+
+    </script>
+  </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -739,7 +696,7 @@
       <script type="text/template">
         #Où va le CSS?
 
-        Ouvrez le fichier ```style.css``` dans le même dossier que le fichier ``index.html``.
+        Ouvrez le fichier ```style.css``` dans le même dossier que le fichier ``index.html``. <!--translate--> Glitch already connects these two files together for us!
 
         ```html
         <link rel="stylesheet" href="style.css">
