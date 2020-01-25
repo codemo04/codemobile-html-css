@@ -14,6 +14,6 @@ Instructor notes: https://ladieslearningcode.github.io/codemobile-html-css/notes
 
 Afficher les diapositives avec Atom : https://ladieslearningcode.github.io/codemobile-html-css/slides-fr.html
 
-Afficher les diapositives avec Glitch : (in translation) https://ladieslearningcode.github.io/codemobile-html-css/slides-fr-glitch.html
+Afficher les diapositives avec Glitch : https://ladieslearningcode.github.io/codemobile-html-css/slides-fr-glitch.html
 
 Notes de la formatrice : https://ladieslearningcode.github.io/codemobile-html-css/notes-fr.html
